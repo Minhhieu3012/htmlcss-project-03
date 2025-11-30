@@ -4,6 +4,7 @@
 
 :root {
   --header-bg: #10375c;
+  --height: 60px;
 }
 
 html {
@@ -28,10 +29,31 @@ a {
   margin: 0 auto;
 }
 
+.btn {
+  display: inline-block; /* Ban đầu nó là thẻ inline */
+  min-width: 205px;
+  height: var(--height);
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 99px;
+  border: 1px solid #2e80ce; /* Đỡ hơn khi chuyển style của nút */
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: var(--height);
+  background: #2e80ce;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 /* ========================================= Header ============================================ */
 .header {
   min-height: 100vh; /* Nội dung nhiều hơn sẽ tự tăng chiều cao */
   background: var(--header-bg);
+  padding-top: 30px; /* Khắc phục margin collapse */
 }
 
 .logo {
@@ -78,4 +100,46 @@ a {
 .logo__brand--small {
   font-size: 1.2em;
   font-weight: 300;
+}
+
+/* Header Top */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__list {
+  display: flex;
+}
+
+.action__login,
+.navbar__link {
+  padding: 4px 21px; /* 4px để tăng phạm vi bấm */
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #c9d2da;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: #fff;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active::before {
+  position: relative;
+  top: -2px;
+  left: -8px;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.action__signup {
+  --height: 44px;
+  min-width: 104px;
 }

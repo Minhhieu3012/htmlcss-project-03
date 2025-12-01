@@ -656,3 +656,40 @@ a {
 .news-item__more:hover {
   color: #2e80ce;
 }
+
+/* ========================================= Appointment ============================================ */
+.appointment {
+  margin: 85px 0 170px;
+}
+
+.appointment__inner {
+  background: #f6fbff;
+  border-radius: 4px;
+  padding: 100px 70px;
+  text-align: center;
+}
+
+.appointment__heading {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.appointment__heading::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+  display: block; /* Mặc định là inline nên width height kh hoạt động được */
+  content: "";
+  width: 136px;
+  height: 2px;
+  background: #2e80ce;
+}
+
+.appointment__desc {
+  margin: 18px 0 38px;
+  max-width: 617px;
+  margin: 18px auto 38px;
+  font-size: 1.6rem;
+}

@@ -597,7 +597,10 @@ a {
 
 .news-item:hover {
   box-shadow: 0px 18px 50px 0px #0000000d;
-  transform: translateY(-18px);
+}
+
+.news-item:hover .news-item__img {
+  transform: scale(1.1);
 }
 
 .news-item:hover .news-item__body {
@@ -605,10 +608,16 @@ a {
 }
 
 .news-item__thumb {
+  height: 172px;
+  overflow: hidden;
+}
+
+.news-item__img {
   display: block;
   width: 100%; /* để nó bằng width của news-item và nó chia đôi trong news-list */
-  height: 172px;
+  height: 100%; /* Thừa kế lại (hoặc là inherit) */
   object-fit: cover;
+  transition: 0.25s;
 }
 
 .news-item__body {
@@ -642,4 +651,8 @@ a {
   line-height: 1.8;
   font-size: 1.4rem;
   color: #10375c;
+}
+
+.news-item__more:hover {
+  color: #2e80ce;
 }

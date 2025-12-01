@@ -441,6 +441,10 @@ a {
   margin-top: 70px;
 }
 
+.member-item:hover .member-item__thumb {
+  transform: scale(1.1);
+}
+
 .member-item__img-bg {
   padding-top: 28px;
   background: #eaf6ff;
@@ -454,6 +458,7 @@ a {
   max-width: 100%; /* Không cho nó bị phình ra ngoài */
   height: 290px;
   object-fit: cover;
+  transition: 0.25s;
 }
 
 .member-item__name {

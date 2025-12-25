@@ -116,13 +116,21 @@
               <li class="navbar__item">
                 <a href="#doctor" class="navbar__link">Doctors</a>
               </li>
+              <li class="navbar__item show-on-mobile separate">
+                <a href="#!" class="navbar__link">Log In</a>
+              </li>
+              <li class="navbar__item show-on-mobile">
+                <a href="#!" class="navbar__link">Sign Up</a>
+              </li>
             </ul>
           </nav>
 
           <!-- Action -->
           <div class="header-action">
-            <a href="#!" class="header-action__login">Log In</a>
-            <button href="#!" class="btn header-action__signup">Sign Up</button>
+            <a href="#!" class="header-action__login hide-on-mobile">Log In</a>
+            <button href="#!" class="btn header-action__signup hide-on-mobile">
+              Sign Up
+            </button>
           </div>
         </div>
 
@@ -388,7 +396,9 @@
         <div class="container">
           <header class="member__header">
             <h2 class="section-heading">Our virtual dentist</h2>
-            <div class="btn member__cta hide-on-mobile">Meet our dentist</div>
+            <div class="btn member__cta hide-on-tablet hide-on-mobile">
+              Meet our dentist
+            </div>
           </header>
 
           <div class="member__list">
@@ -544,8 +554,8 @@
               <h2 class="news__heading section-heading">
                 Read Latest News & Events.
               </h2>
-              <a href="#!" class="news__more">Read All Blog</a>
-              <div class="news__control control hide-on-mobile">
+              <a href="#!" class="news__more hide-on-mobile">Read All Blog</a>
+              <div class="news__control control hide-on-tablet">
                 <!-- Previous -->
                 <button class="control__btn">
                   <svg
@@ -635,7 +645,7 @@
                 </section>
               </article>
             </div>
-            <div class="news__control control hide-on-pc">
+            <div class="news__control control hide-on-pc hide-on-mobile">
               <!-- Previous -->
               <button class="control__btn">
                 <svg
@@ -672,6 +682,9 @@
                   />
                 </svg>
               </button>
+            </div>
+            <div class="btn member__cta hide-on-pc hide-on-tablet">
+              Read All Blogs
             </div>
           </div>
         </div>

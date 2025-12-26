@@ -245,7 +245,7 @@
 /* Mobile */
 @media screen and (max-width: 767px) {
   .hide-on-mobile {
-    display: none;
+    display: none !important;
   }
 
   .separate {
